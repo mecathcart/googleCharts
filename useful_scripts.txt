@@ -1,0 +1,11 @@
+Count the number of lines starting with "z" in Wikipedia:
+	grep '^z' wikipedia_wordfreq.txt | wc -l
+
+Count the number of lines starting with 'z' in n-Grams:
+	grep '^z' NgramWordMatchCounter/* | wc -l
+
+Save the lines starting with 'z' from Wikipedia into wikipedia_z.txt
+	grep '^z' wikipedia_wordfreq.txt > wikipedia_z.txt
+
+Save the lines starting with 'z' from n-Grams into ngram_z.txt
+	grep -h '^z' NgramWordMatchCounter/* > ngram_z.txt
